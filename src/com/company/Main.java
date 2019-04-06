@@ -5,18 +5,20 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         Scanner baca = new Scanner(System.in);
         int j;
+        int jumlah = 0;
 
-        
+
         System.out.print("Masukkan Deret Fibonacci : ");
         j = baca.nextInt();
 
         for (int i = 1; i <= j; i++) {
             int x = cari(i);
-            System.out.print(x + " ");
+            jumlah +=j;
         }
+        System.out.println("Hasil Deret : " +jumlah);
 
     }
 
@@ -28,3 +30,4 @@ public class Main {
         }
     }
 }
+
